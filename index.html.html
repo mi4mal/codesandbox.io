@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="theme-color" content="#000000">
+        <!--
+            manifest.json provides metadata used when your web app is added to the
+            homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
+          -->
+        <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+        <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+        <!--
+            Notice the use of %PUBLIC_URL% in the tags above.
+            It will be replaced with the URL of the `public` folder during the build.
+            Only files inside the `public` folder can be referenced from the HTML.
+      
+            Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+            work correctly both with client-side routing and a non-root public URL.
+            Learn how to configure a non-root public URL by running `npm run build`.
+          -->
+        <title>React App</title>
+        <link rel="stylesheet" type="text/css" media="screen" href="styles.css" />
+        <!-- Required styles for MDC Web -->
+        <link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+      </head>
+<body>
+      
+        <h6 class="mdc-typography mdc-typography--headline6 demo-headline">MDC Web Quick Start</h6>
+
+        <div class="mdc-text-field">
+          <input type="text" id="my-text-field" class="mdc-text-field__input first-name-input">
+          <label class="mdc-floating-label" for="my-text-field">First name</label>
+          <div class="mdc-line-ripple"></div>
+        </div>
+        
+        <div class="mdc-text-field">
+          <input type="text" id="my-text-field" class="mdc-text-field__input last-name-input">
+          <label class="mdc-floating-label" for="my-text-field" >Last name</label>
+          <div class="mdc-line-ripple"></div>
+        </div>
+        <button class="mdc-button greet-button">Greet</button>
+        
+        <div class="mdc-typography mdc-typography--overline greet-message"></div>
+      
+      <!-- Required MDC Web JavaScript library -->
+      <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+        <!-- Instantiate single textfield component rendered in the document -->
+        <script>
+        mdc.textField.MDCTextField.attachTo(document.querySelector('.mdc-text-field'));
+        </script>
+        <script src="/main.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
